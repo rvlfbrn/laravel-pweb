@@ -14,11 +14,15 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
-<body>
-    <main class="container">
-        <h1>Selamat Datang</h1>
-        <p>Silahkan daftar pada link berikut:</p>
-        <a href="{{ route('data.create') }}">Daftar</a>
+<body class="p-3 mb-2 bg-info text-light" style="background: linear-gradient(to bottom, #4ebbdf, #22be78);">
+    <main class="container d-flex align-items-center text-center" style="min-height: 100vh;">
+        <div class="w-100">
+            <div class="card p-3">
+                <h1 class="fw-bold">Selamat Datang</h1>
+                <p>Silahkan daftar pada link berikut:</p>
+                <a href="{{ route('data.create') }}" class="btn btn-success">Daftar</a>
+            </div>
+        </div>
     </main>
 </body>
 
